@@ -8,13 +8,13 @@ WiFiClient client;
 #include "DHT.h"
 
 
-#define DHTTYPE DHT11         // specify the type of DHT sensor
+#define DHTTYPE DHT11         
 #define DHTPIN 13 
 DHT dht(DHTPIN, DHTTYPE);
 #define SOIL_MOISTURE_PIN 39
 
 #define ONE_WIRE_BUS 23
-int keyIndex = 0;          // your network key Index number (needed only for WEP)
+int keyIndex = 0;          
 
 
 #define LDR_PIN 34
@@ -50,7 +50,7 @@ void loop() {
   Serial.print("LDR Value: ");
   Serial.println(ldrValue);
 
-  sensors.requestTemperatures(); // Send the command to get temperatures
+  sensors.requestTemperatures(); 
 
   delay(10000);
 
